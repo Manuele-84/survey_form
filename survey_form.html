@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Survey Form</title>
+    </head>
+    <body>
+        <h1 id="title">Welcome to my new Survey Form</h1>
+        <p id="description">Helping us today will build your tomorrow!</p>
+        <form id="survey-form" action="#">
+            <label id="name-label" for="name">Name: </label>
+            <input id="name" type="text" placeholder="enter your name" required>
+         <br>
+            <label id="email-label" for="email">E-mail: </label>
+            <input id="email" type="email" placeholder="enter your E-mail" required>
+        <br>
+            <label id="number-label" for="number">Age: </label>
+            <input id="number" type="number" min="10" max="99" placeholder="enter your age">
+        <br>
+        <p>How do you feel today:</p>
+            <select id="dropdown" name="feel">
+                <option disabled selected value>Select your feeling</option>
+                <option value="happy">Happy</option>
+                <option value="angry">Angry</option>
+                <option value="sad">Sad</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="offer">Choose your offer:</label><br>
+              <input type="radio" name="offer" value="Eco2000"> Eco2000 <br>
+              <input type="radio" name="offer" value="Eco5000"> Eco5000 <br>
+              <input type="radio" name="offer" value="Eco8000"> Eco8000 <br>
+            <label for="color">Choose the color you prefer: </label><br>
+              <input type="checkbox" name="color" value="red"> Red <br>
+              <input type="checkbox" name="color" value="green"> Green <br>
+              <input type="checkbox" name="color" value="black"> Black <br>
+            <label for="suggestion">Any suggestion? </label><br>
+              <textarea placeholder="Insert your comment here" rows="4" cols="50"></textarea> <br>
+          <button id="submit" type="submit">Submit</button>
+        </form>
+    </body>
+</html>
